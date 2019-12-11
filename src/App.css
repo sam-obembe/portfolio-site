@@ -10,15 +10,16 @@ h1,h2,h3{
   font-family: 'Roboto',sans-serif
 }
 
-
 .landing{
   display:grid;
   grid-template-columns: repeat(2,1fr);
   grid-gap:1px;
 }
 
-/**Content Banner**/
 
+
+
+/**START Content Banner**/
 .contentBanner{
   height:100vh;
   background-color:rgba(245, 245, 245, 0.781)
@@ -51,6 +52,9 @@ h1,h2,h3{
 .elevated{
   box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2);
 }
+/** END ContentBanner **/
+
+
 
 
 /**Project Tile component**/

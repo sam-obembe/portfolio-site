@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProjectTile.css'
+
 
 const ProjectTile=(props)=>{
   const styling={backgroundImage:props.thumbnail}
