@@ -1,33 +1,82 @@
 .App {
   text-align: center;
+  background-color:#f7f8fa;
+  width: 100vw;
+  height: 100vh;
+  color: black;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+h1,h2,h3{
+  font-family: 'Roboto',sans-serif
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.landing{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:1px;
 }
 
-.App-link {
-  color: #61dafb;
+/**Content Banner**/
+
+.contentBanner{
+  height:100vh;
+  background-color:rgba(245, 245, 245, 0.781)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contentBannerText{
+  height:100vh
 }
+
+.contentCard{
+  background-color:white;
+  height:70%;
+  margin:5% auto;
+  width: 80%;
+  text-align: justify;
+  padding: 5%;
+  opacity: 0.95;
+  border-radius: 5px;
+}
+
+.contentCard p{
+  font-family: "Courier Prime Sans",monospace;
+}
+.iconContent{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top:5%
+}
+
+.elevated{
+  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2);
+}
+
+
+/**Project Tile component**/
+.tileMain{
+  width: 200px;
+  height:200px;
+  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2);
+  margin:0 auto;
+}
+
+.tileMain:hover{
+  /*transform: scale(1.15);*/
+  background-color: rgba(0,0,0,0.8);
+  color:white;
+  animation-name:widen;
+  animation-duration:0.5s;
+  width:250px;
+}
+
+.tileTitle{
+  margin-top:75px
+}
+
+@keyframes widen{
+  from{width:200px}
+  to{width:250px}
+}
+
+/**Project Tile Component End**/
