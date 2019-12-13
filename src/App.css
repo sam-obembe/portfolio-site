@@ -49,8 +49,14 @@ h1,h2,h3{
   margin-top:5%
 }
 
+.iconContent a{
+  text-decoration: none;
+  color:black;
+}
+
 .elevated{
   box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2);
+  z-index: 2;
 }
 /** END ContentBanner **/
 

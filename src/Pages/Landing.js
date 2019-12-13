@@ -2,6 +2,7 @@ import React from 'react'
 import ContentBanner from '../Components/ContentBanner/ContentBanner'
 import projects from '../projectList'
 import backgroundImg from '../images/MyScreen-copy.jpg';
+import ContentCard from '../Components/ContentCard/ContentCard'
 
 const Landing =()=>{
   return(
@@ -10,8 +11,9 @@ const Landing =()=>{
           
           <p> Wagwan</p>
     
-        </ContentBanner>
+        </ContentBanner> 
 
+        
         
         <ContentBanner variant="Icons" title="Projects" projects={projects} styleVariant="" elevated={true} content=""/>
     </div>

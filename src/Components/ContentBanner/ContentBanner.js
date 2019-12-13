@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectTile from '../ProjectTile/ProjectTile'
-
+import {NavLink} from 'react-router-dom'
 
 const ContentBanner=(props)=>{
   let pickMainStyle=()=>{
@@ -22,7 +22,18 @@ const ContentBanner=(props)=>{
   let projectRender=()=>{
     if(props.projects){
       return props.projects.map((content,i)=>{
-        return <ProjectTile displayText={content.name} thumbnail={content.pictures[0]} key={i}/>
+        console.log(content)
+        if(content.link!==undefined){
+          return (
+            <NavLink to={content.link}>  
+              <ProjectTile displayText={content.name} thumbnail={content.pictures?content.pictures[0]:""} key={i}/>
+            </NavLink>
+            )
+        }
+        else{
+          return <ProjectTile displayText={content.name} key={i}/>
+        }
+
       })
     }
   }
@@ -57,7 +68,6 @@ const ContentBanner=(props)=>{
     else{
       return null;
     }
-    //return props.children ? props.children:null;
   }
 
   return(
