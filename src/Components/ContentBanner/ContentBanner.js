@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectTile from '../ProjectTile/ProjectTile'
 import {NavLink} from 'react-router-dom'
+import ContentCard from '../ContentCard/ContentCard'
 
 const ContentBanner=(props)=>{
   let pickMainStyle=()=>{
@@ -59,10 +60,10 @@ const ContentBanner=(props)=>{
   let propsChildren=()=>{
     if(props.children){
       return(
-        <div className="contentCard elevated">
+        <ContentCard>
           <h1>{props.title}</h1>
           {props.children}
-        </div>
+        </ContentCard>
       )
     }
     else{
@@ -74,7 +75,7 @@ const ContentBanner=(props)=>{
     <div className={pickMainStyle()+" "+pickElevation()} style={{backgroundImage:`url(${backgroundImage()})`}}>
 
       <div style={showIconsDiv()}>
-        <h2>{props.title}</h2>
+        <h2 className="contentTitle">{props.title}</h2>
         <div className="iconContent">
           
           {projectRender()}

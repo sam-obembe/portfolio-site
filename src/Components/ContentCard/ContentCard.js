@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ContentCard=()=>{
+const ContentCard=(props)=>{
   return(
     <div className="contentCard Elevated">
-        <h1>Hi from content card</h1>
+       {props.children}
     </div>
   )
 }

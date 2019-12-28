@@ -58,6 +58,10 @@ h1,h2,h3{
   box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2);
   z-index: 2;
 }
+
+.contentTitle{
+  margin-top:5vh;
+}
 /** END ContentBanner **/
 
 
@@ -69,6 +73,7 @@ h1,h2,h3{
   height:200px;
   box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2);
   margin:0 auto;
+  margin-bottom: 30px;
 }
 
 .tileMain:hover{
